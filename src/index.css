@@ -1,0 +1,26 @@
+/* ベースフォント設定 */
+:root{
+  --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --base-size: 16px;
+  --base-line-height: 1.55;
+  --heading-line-height: 1.2;
+}
+
+html {
+  font-size: var(--base-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: var(--base-line-height);
+  color: #111827;
+  margin: 0;
+}
+
+/* 見出し・フォーム等の調整 */
+h1,h2,h3,h4,h5,h6 { font-weight:600; line-height:var(--heading-line-height); }
+button,input,select,textarea { font-family:var(--font-sans); font-weight:500; }
