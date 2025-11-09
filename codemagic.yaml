@@ -1,6 +1,6 @@
 workflows:
   ios-simulator-test:
-    name: iOS SimTest4
+    name: iOS SimTest
     environment:
       flutter: stable
       xcode: latest
@@ -11,6 +11,7 @@ workflows:
       - flutter build ios --simulator --debug --no-codesign
     artifacts:
       - build/ios/iphonesimulator/*.app
+
 
 
 
